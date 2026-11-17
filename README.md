@@ -17,7 +17,7 @@ signs what they build and publishes the repository.
 Trust MabOS's signing key (fingerprint `2918F1A00FA8F3F9A847904D92D811A9B2583DF6`):
 
 ```sh
-curl -sL https://raw.githubusercontent.com/mabasterYT/mabos-packages/main/keys/mabos.asc | sudo pacman-key --add -
+curl -sL https://raw.githubusercontent.com/mabasterYT/mabos-packages-arch/main/keys/mabos.asc | sudo pacman-key --add -
 sudo pacman-key --lsign-key 2918F1A00FA8F3F9A847904D92D811A9B2583DF6
 ```
 
@@ -25,7 +25,7 @@ Add the repository to `/etc/pacman.conf`, after Arch's own:
 
 ```ini
 [mabos]
-Server = https://github.com/mabasterYT/mabos-packages/releases/download/repo
+Server = https://github.com/mabasterYT/mabos-packages-arch/releases/download/repo
 ```
 
 Then install what you want, e.g. `sudo pacman -Syu mabos-gtk4` (it asks to replace `gtk4`), and
